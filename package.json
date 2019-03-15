@@ -1,0 +1,16 @@
+{
+  "name": "particle-ingest",
+  "version": "1.0.0",
+  "description": "Ingest particle events to JSON line-by-line and serve via JSON API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christian Di Lorenzo",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^18.1.0",
+    "hapi-auth-basic": "^5.0.0",
+    "inert": "^5.1.2"
+  }
+}
