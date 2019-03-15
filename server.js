@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 const Hapi = require('hapi');
+const path = require('path');
 
 const server = Hapi.server({
     host: 'localhost',
@@ -11,7 +12,7 @@ const server = Hapi.server({
 
 const USERNAME = process.env.APP_USERNAME || 'admin';
 const PASSWORD = process.env.APP_PASSWORD || 'X';
-const SUBFOLDER = './events';
+const SUBFOLDER = path.join(__dirname, './events');
 
 if (!fs.existsSync(SUBFOLDER)){
     fs.mkdirSync(SUBFOLDER);
